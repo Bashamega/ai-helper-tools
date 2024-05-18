@@ -1,6 +1,5 @@
 import { getSession } from "next-auth/react";
 import React, { useState, useEffect } from "react";
-import { authOptions } from "./api/auth/[...nextauth]";
 import SessionProvider from "@/components/SessionProvider";
 import { Login } from "@/components/login";
 
