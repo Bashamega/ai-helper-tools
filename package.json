@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.11.3",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "snarkdown": "^2.0.0"
   },
   "devDependencies": {
     "postcss": "^8",
