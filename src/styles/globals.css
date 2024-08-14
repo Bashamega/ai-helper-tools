@@ -3,31 +3,32 @@
 @tailwind utilities;
 
 .h-full-container {
-    height: calc(100vh - 116px);
+  height: calc(100vh - 116px);
 }
-
-
-
 
 .btn-grad {
-    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
-    /*margin: 10px;*/
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-    cursor:pointer
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+  /*margin: 10px;*/
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
 }
 
-
 .btn-grad:enabled:hover {
-    background-position: right center;
-    /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
