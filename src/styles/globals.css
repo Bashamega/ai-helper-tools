@@ -32,3 +32,13 @@
   color: #fff;
   text-decoration: none;
 }
+
+.dark .btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #1F2937 0%, /* Dark mode start color */
+    #374151 51%, /* Dark mode middle color */
+    #1F2937 100% /* Dark mode end color */
+  );
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Darker shadow for dark mode */
+}
