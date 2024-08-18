@@ -1,6 +1,6 @@
 # Contributing to ai-helper-tools
 
-Thank you for considering contributing to ai-helper-tools! We welcome contributions from everyone. Here’s a guide to help you get started.
+Thank you for considering contributing to Gemini tools! We welcome contributions from everyone. Here’s a guide to help you get started.
 
 ## Table of Contents
 
