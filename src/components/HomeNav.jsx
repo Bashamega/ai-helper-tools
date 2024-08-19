@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DarkModeToggle } from "./DarkModeToggle"
+import { DarkModeToggle } from "./DarkModeToggle";
 
 export function HomeNav() {
   return (
