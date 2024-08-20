@@ -49,7 +49,7 @@ export default function App() {
       <HomeNav />
       <section className=" bg-slate-400/30 m-10 p-5 rounded-lg h-full-container overflow-auto relative">
         {response ? (
-          <section className=" w-[90%] left-0 mx-[5%] bg-slate-100 p-5 rounded-lg text-lg lg:h-[80%] overflow-auto mb-2 ">
+          <section className=" w-[90%] left-0 mx-[5%] bg-slate-100 p-5 rounded-lg text-lg lg:h-[80%] overflow-auto mb-2">
             <iframe
               className="w-full h-full bg-transperant"
               title="Parsed Markdown"
@@ -59,7 +59,7 @@ export default function App() {
             />
           </section>
         ) : !loader ? (
-          <div className=" w-full h-content flex  items-center justify-center max-h-[50%] lg:max-h-[80%]  h-full">
+          <div className=" w-full h-content flex  items-center justify-center max-h-[50%] lg:max-h-[80%] h-full">
             <div>
               <Image
                 src={"/gimini.png"}
@@ -67,7 +67,7 @@ export default function App() {
                 height={0}
                 className="lg:block hidden"
               ></Image>
-              <p className="text-2xl text-center font-bold">
+              <p className="text-2xl text-center font-bold dark:text-gray-400">
                 Please choose a topic
               </p>
             </div>
@@ -79,7 +79,7 @@ export default function App() {
         )}
         <div className="lg:absolute bottom-[2%] w-[90%] left-0 mx-[5%] bg-slate-400 p-5 rounded-lg text-lg  lg:flex lg:justify-evenly lg:h-[100px] lg:items-center">
           <select
-            className="bg-white cursor-pointer text-black rounded-md h-full p-2 w-full lg:w-1/4"
+            className="bg-white cursor-pointer text-black rounded-md h-full p-2 w-full lg:w-1/4 dark:bg-gray-300"
             value={prompt.type}
             onChange={(e) => {
               setPrompt({ ...prompt, type: e.target.value });
@@ -97,7 +97,7 @@ export default function App() {
           <br></br>
           <input
             disabled={prompt.type == 1}
-            className="bg-white my-5 lg:my-0 text-black rounded-md h-full p-2 w-full lg:w-2/4 disabled:bg-slate-200"
+            className="bg-white my-5 lg:my-0 text-black rounded-md h-full p-2 w-full lg:w-2/4 disabled:bg-slate-200 dark:bg-gray-300"
             value={prompt.topic}
             placeholder="Type the topic"
             onChange={(e) => {
@@ -105,7 +105,7 @@ export default function App() {
             }}
           />
           <button
-            className="lg:w-1/5 w-full btn-grad rounded-lg disabled:cursor-auto disabled:shadow-none h-full "
+            className="lg:w-1/5 w-full btn-grad rounded-lg disabled:cursor-auto disabled:shadow-none h-full dark:text-gray-200 dark:bg-red-700"
             onClick={generate}
             disabled={prompt.topic == ""}
           >
