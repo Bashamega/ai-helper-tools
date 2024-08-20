@@ -60,7 +60,21 @@ For code contributions:
    ```bash
    npm install
    ```
-3. **Run Development Server**:
+3. **Copy `.env.example` to `.env`**:
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Add Your API Key**:
+   - Open the `.env` file in a text editor.
+   - Replace the placeholder in `NEXT_PUBLIC_API_KEY=""` with your actual API key.
+     ```
+     NEXT_PUBLIC_API_KEY="your_actual_api_key_here"
+     ```
+
+5. **Run Development Server**:
+   - Save the `.env` file after editing it.
+   - You can now proceed to run the development server using `npm run dev`.
    ```bash
    npm run dev
    ```
