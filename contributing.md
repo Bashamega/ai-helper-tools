@@ -61,11 +61,13 @@ For code contributions:
    npm install
    ```
 3. **Copy `.env.example` to `.env`**:
+
    ```bash
    cp .env.example .env
    ```
 
 4. **Add Your API Key**:
+
    - Open the `.env` file in a text editor.
    - Replace the placeholder in `NEXT_PUBLIC_API_KEY=""` with your actual API key.
      ```

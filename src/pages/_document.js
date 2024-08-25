@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body className="dark:bg-gray-700">
-        <Banner showButton={false}/>
+        <Banner showButton={false} />
         <Main />
         <NextScript />
       </body>
